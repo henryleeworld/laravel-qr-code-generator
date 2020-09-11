@@ -1,4 +1,4 @@
-# Laravel 7 QR 二維碼產生器
+# Laravel 8 QR 二維碼產生器
 
 引入 simplesoftwareio 的 simple-qrcode 套件來擴增讓使用者直接在網頁上根據不同的資料類型來產生出不同尺寸、不同容錯等級的 QR 二維碼。
 
