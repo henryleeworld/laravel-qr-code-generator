@@ -1,4 +1,4 @@
-# Laravel 8 QR 二維碼產生器
+# Laravel 10 QR 二維碼產生器
 
 引入 simplesoftwareio 的 simple-qrcode 套件來擴增讓使用者直接在網頁上根據不同的資料類型來產生出不同尺寸、不同容錯等級的 QR 二維碼。
 
@@ -12,15 +12,16 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/qr-code/generate/` 來進行 QR 二維碼產生。
+> 伺服器必須安裝 ImageMagick 並啟用模組。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/1In0pcW.png)
+![](https://i.imgur.com/KlalBVZ.png)
 > 可以看到產生 QR 二維碼結果，完全不用安裝任何的軟體
