@@ -31,7 +31,7 @@ class QrCodeController extends Controller
 	                         ->generate('https://henrywar.blogspot.com/', $path . $data['url_merged_background_filename']);
 
         $data['sms_filename'] = 'sms-' . $filename;
-		Storage::disk('public_qr_code')->put($data['sms_filename'], QrCode::format('png')->encoding('UTF-8')->size(300)->SMS('0931262951', '日本樂天集團今年買下 La New 旗下負責營運中華職棒球隊 Lamigo 桃猿的子公司大高熊育樂股份有限公司全部股份'));
+		Storage::disk('public_qr_code')->put($data['sms_filename'], QrCode::format('png')->encoding('UTF-8')->size(300)->SMS('0931262951', __('Women take part in Japan\'s 1,250-year-old \'naked festival\' for first time')));
 		
         return view('qr-code', $data);
     }
